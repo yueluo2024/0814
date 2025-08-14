@@ -50,21 +50,41 @@ const { page } = Astro.props;
   {
     page.currentPage === 1 ? (
       <>
-        <div class="mb-4 grid grid-cols-1">
+        {/* 
+      区域 1：首条数据突出展示（HeroCard 卡片，视觉优先级更高）
+      使用网格布局（grid），仅 1 列（grid-cols-1）
+      当 page.data 有数据时，渲染一个 HeroCard 组件，展示第一条数据
+      - 布局：默认 1 列，通过 `mb-4` 控制底部间距 
+    */}
+        <div class="mb-4 grid grid-cols-1"> 
           {page.data.length > 0 && <HeroCard post={page.data[0]} />}
         </div>
+
+        {/* 
+      区域 2：第 2、3 条数据（索引 1 和 2），采用两列布局（中等屏幕及以上）
+      - 数据范围：`slice(1, 3)` → 从数据的第 2-3 条（索引 1 到 2）渲染 PostCard 组件
+      - 布局：`gap-4` 控制卡片间距，`md:grid-cols-2` 让中等屏幕显示 2 列 
+    */}
         <div class="mb-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
-          {page.data.slice(1, 3).map((post) => (
+          {page.data.slice(1, 5).map((post) => (
             <PostCard post={post} />
           ))}
         </div>
+      
+        {/* 
+      区域 3：第 4 条及以后的数据（索引 ≥3），采用响应式布局（大屏 3 列、中屏 2 列、小屏 1 列）
+      - 数据范围：`slice(3)` → 提取索引 3 到末尾的所有元素 
+      - 布局：`lg:grid-cols-3` 让大屏显示 3 列，兼容不同设备 
+    */}
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {page.data.slice(3).map((post) => (
+          {page.data.slice(5).map((post) => (
             <PostCard post={post} />
           ))}
         </div>
       </>
     ) : (
+
+      //Fallback 布局：数据为空时的统一展示（即使无数据，`map` 也会安全处理）布局与「区域 3」保持一致，确保视觉风格统一
       <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         {page.data.map((post) => (
           <PostCard post={post} />
