@@ -2,7 +2,7 @@
 author: AA
 category:
 - Three
-cover: https://hcyykj-eos-hhht5-01.eos.huhehaote-8.cmecloud.cn/194cecc577c94d158951cd7156150ecf086?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27rAECMagNy2gsoDX3nz7d3wT4so861Hxk.jpg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250814T061531Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=JX8QMYUJCVXX3YB0PN5Y%2F20250814%2Fdefault%2Fs3%2Faws4_request&t=3&u=1039948626179112507&ot=personal&oi=1039948626179112507&f=FtjVJgS2dtX2yEXAOc11COKAtG6JKHaZ9&X-Amz-Signature=f688fcf02980c9eceb05443fa54816e5512bd29094dec0b78097ac4de202dd33
+cover: https://raw.githubusercontent.com/yueluo2024/images/refs/heads/main/DSC_7022fx.jpg
 coverAlt: white and brown concrete house near trees at daytime
 description: Learn how to use images in Astro.
 pubDate: 2024-02-01 00:00:00
