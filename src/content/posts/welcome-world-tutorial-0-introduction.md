@@ -2,19 +2,50 @@
 author: AA
 category:
 - Two
-cover: https://images.unsplash.com/photo-1483366774565-c783b9f70e2c?ixid=M3w2NzEyNTB8MHwxfHNlYXJjaHwyfHxidWlsZGluZyUyMGNvbW1pY3xlbnwwfDB8MXx8MTczMDU1Mjc1N3ww&ixlib=rb-4.0.3&w=1960&h=1102&auto=format&fit=crop&q=60
-coverAlt: worm's-eye view photography of concrete building
-description: Learn the basics of Astro with a project-based tutorial. All the background
-  knowledge you need to get started!
-pubDate: 2024-03-03 00:00:00
+cover: https://raw.githubusercontent.com/yueluo2024/images/refs/heads/main/20250327%E6%A1%83%E8%8A%B1/QNC_5014x%20%E6%8B%B7%E8%B4%9D.jpg
+coverAlt: 桃花2
+description: 三月桃花红十里，春风吹醒桃花醉，桃花是三月的代表花
+pubDate: 2025-03-27 00:00:00
 slug: welcome-world-tutorial-0-introduction
 tags:
-- astro-build
-- Python
-- Sass
-title: Build your first Astro Blog 
+- 花卉摄影
+- 中国风
+- 画意摄影
+title: 桃花2
 ---
+<br/>
 
+**与桃花的年度之约**  
+<br/>
+桃花是花卉摄影中最动人的题材之一。 
+
+<br/>
+每年的这个时候，我都会扛起相机，往城郊那片桃林走。晨露还凝在花瓣上时，镜头里的粉白便有了珍珠般的光泽；风过时，整树花枝簌簌摇晃，取景框里的光斑也跟着跳，像把春天的心跳都收进了存储卡。<br/>
+
+<br/>
+去年蹲在老桃树下拍蜜蜂采蜜，不小心被枝桠勾住了衣角。起身时带落半捧花瓣，纷纷扬扬落在相机包上，成了那年春天最柔软的意外。<br/>
+
+<br/>
+其实桃花的花期短得厉害。前几日还满枝堆雪，一场夜雨就能打落大半。可就是这稍纵即逝的娇嫩，让人总惦记着赴约。<br/>
+
+<br/>
+镜头里的花影一年年重叠，树底下的野草换了几茬，唯有按下快门时的心动，和初遇时没什么两样。<br/>
+
+<br/>
+
+
+**原来有些风景，真的能让人在重复的时光里，反复爱上春天。**
+
+<br/>
+
+
+唐·薛能
+```
+香色自天种，千年岂易逢。开齐全未落，繁极欲相重。冷湿朝如淡，晴干午更浓。风光新社燕，时节旧春农。篱落欹临竹，亭台盛间松。乱缘堪羡蚁，深入不如蜂。有影宜暄煦，无言自冶容。洞连非俗世，溪静接仙踪。子熟河应变，根盘土已封。西王潜爱惜，东朔盗过从。醉席眠英好，题诗恋景慵。芳菲聊一望，何必在临邛。
+```
+
+
+<br/>
 In this tutorial, you’ll learn Astro’s key features by building a fully\-functioning blog, from zero to full launch! 🚀 
 
 
