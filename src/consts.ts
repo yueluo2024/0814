@@ -2,21 +2,21 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 // Base Page Metadata, src/layouts/BaseLayout.astro
-export const BRAND_NAME = "月落无声2025";
-export const SITE_TITLE = "月落无声2025";
+export const BRAND_NAME = "月落无声";
+export const SITE_TITLE = "月落无声";
 export const SITE_DESCRIPTION = "An Astro Theme for Visual Storytelling";
 export const LIGHT_THEME = 'corporate';
 export const DARK_THEME = 'halloween';
 
 // Tags Page Metadata, src/pages/tags/index.astro
-export const Tags_TITLE = "月落无声2025 - All Tags";
+export const Tags_TITLE = "月落无声 - All Tags";
 export const Tags_DESCRIPTION =
-  "月落无声2025 - All tags and the count of articles related to each tag";
+  "月落无声 - All tags and the count of articles related to each tag";
 
 // Tags Page Metadata, src/pages/tags/[tag]/[page].astro
 export function getTagMetadata(tag: string) {
   return {
-    title: `All articles on '${tag}' tag in 月落无声2025`,
+    title: `All articles on '${tag}' tag in 月落无声`,
     description: `Explore articles about ${tag} for different perspectives and in-depth analysis.`,
   };
 }
@@ -24,8 +24,8 @@ export function getTagMetadata(tag: string) {
 // Category Page Metadata, src/pages/category/[category]/[page].astro
 export function getCategoryMetadata(category: string) {
   return {
-    title: `All articles in '${category}' category in 月落无声2025`,
-    description: `Browse all articles under the ${category} category in 月落无声2025`,
+    title: `All articles in '${category}' category in 月落无声`,
+    description: `Browse all articles under the ${category} category in 月落无声`,
   };
 }
 
