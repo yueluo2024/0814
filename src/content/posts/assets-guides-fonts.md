@@ -2,185 +2,50 @@
 author: AA
 category:
 - Two
-cover: https://images.unsplash.com/photo-1491900177661-4e1cd2d7cce2?ixid=M3w2NzEyNTB8MHwxfHNlYXJjaHw4fHxidWlsZGluZyUyMGNvbW1pY3xlbnwwfDB8MXx8MTczMDU1Mjc1N3ww&ixlib=rb-4.0.3&w=1960&h=1102&auto=format&fit=crop&q=60
-coverAlt: blue boats parked on river between multicolored buildings at sunset
-description: Looking to add some custom typefaces to an Astro website? Use Google
-  Fonts with Fontsource or add a font of your choice.
-pubDate: 2024-01-29 00:00:00
-slug: assets-guides-fonts
+cover: https://qi0813.netlify.app/_astro/20250327-taohua%20(2).DP407r1M.jpg
+coverAlt: 桃花
+description: 三月桃花红十里，春风吹醒桃花醉，桃花是三月的代表花
+pubDate: 2025-03-27 00:00:00
+slug: welcome-world-tutorial-0-introduction
 tags:
-- astro
-- Rust
-- Less
-title: Using custom fonts 
+- 花卉摄影
+- 中国风
+- 画意摄影
+title: 桃花
 ---
+<br/>
 
-This guide will show you how to add web fonts to your project and use them in your components.
+## 与桃花的年度之约  
+
+![df](../../../public/2025/20250327/20250327-taohua%20(1).jpg)![df](../../../public/2025/20250327/20250327-taohua%20(2).jpg)![df](../../../public/2025/20250327/20250327-taohua%20(3).jpg)![df](../../../public/2025/20250327/20250327-taohua%20(4).jpg)![df](../../../public/2025/20250327/20250327-taohua%20(5).jpg)![df](../../../public/2025/20250327/20250327-taohua%20(6).jpg)![df](../../../public/2025/20250327/20250327-taohua%20(7).jpg)![df](../../../public/2025/20250327/20250327-taohua%20(8).jpg)![df](../../../public/2025/20250327/20250327-taohua%20(9).jpg)![df](../../../public/2025/20250327/20250327-taohua%20(10).jpg)  
+<br/>
+桃花是花卉摄影中最动人的题材之一。 
+
+<br/>
+每年的这个时候，我都会扛起相机，往城郊那片桃林走。晨露还凝在花瓣上时，镜头里的粉白便有了珍珠般的光泽；风过时，整树花枝簌簌摇晃，取景框里的光斑也跟着跳，像把春天的心跳都收进了存储卡。<br/>
+
+<br/>
+去年蹲在老桃树下拍蜜蜂采蜜，不小心被枝桠勾住了衣角。起身时带落半捧花瓣，纷纷扬扬落在相机包上，成了那年春天最柔软的意外。<br/>
+
+<br/>
+其实桃花的花期短得厉害。前几日还满枝堆雪，一场夜雨就能打落大半。可就是这稍纵即逝的娇嫩，让人总惦记着赴约。<br/>
+
+<br/>
+镜头里的花影一年年重叠，树底下的野草换了几茬，唯有按下快门时的心动，和初遇时没什么两样。<br/>
+
+<br/>
 
 
-Using a local font file
------------------------
 
-[Section titled Using a local font file](#using-a-local-font-file)
-This example will demonstrate adding a custom font using the font file `DistantGalaxy.woff`.
+**原来有些风景，真的能让人在重复的时光里，反复爱上春天。**
 
-
-1. Add your font file to `public/fonts/`.
-2. Add the following `@font-face` statement to your CSS. This could be in a global `.css` file you import, a `<style is:global>` block, or a `<style>` block in a specific layout or component where you want to use this font.
+<br/>
 
 
-
-
-
-
-
+唐·薛能
 ```
-/* Register your custom font family and tell the browser where to find it. */@font-face {  font-family: 'DistantGalaxy';  src: url('/fonts/DistantGalaxy.woff') format('woff');  font-weight: normal;  font-style: normal;  font-display: swap;}
-```
-3. Use the `font-family` value from the `@font-face` statement to style elements in your component or layout. In this example, the `<h1>` heading will have the custom font applied, while the paragraph `<p>` will not.
-
-
-
-
-src/pages/example.astro
-
-
-```
-------
-<h1>In a galaxy far, far away...</h1>
-<p>Custom fonts make my headings much cooler!</p>
-<style>h1 {  font-family: 'DistantGalaxy', sans-serif;}</style>
+香色自天种，千年岂易逢。开齐全未落，繁极欲相重。冷湿朝如淡，晴干午更浓。风光新社燕，时节旧春农。篱落欹临竹，亭台盛间松。乱缘堪羡蚁，深入不如蜂。有影宜暄煦，无言自冶容。洞连非俗世，溪静接仙踪。子熟河应变，根盘土已封。西王潜爱惜，东朔盗过从。醉席眠英好，题诗恋景慵。芳菲聊一望，何必在临邛。
 ```
 
 
-Using Fontsource
-----------------
-
-[Section titled Using Fontsource](#using-fontsource)
-The [Fontsource](https://fontsource.org/) project simplifies using Google Fonts and other open\-source fonts. It provides npm modules you can install for the fonts you want to use.
-
-
-1. Find the font you want to use in [Fontsource’s catalog](https://fontsource.org/). This example will use [Twinkle Star](https://fontsource.org/fonts/twinkle-star).
-2. Install the package for your chosen font.
-
-
-
-
-
-
-	* [npm](#tab-panel-265)
-	* [pnpm](#tab-panel-266)
-	* [Yarn](#tab-panel-267)
-
-
-
-
-Terminal window
-
-
-```
-npm install @fontsource/twinkle-star
-```
-
-
-
-
-
-Terminal window
-
-
-```
-pnpm add @fontsource/twinkle-star
-```
-
-
-
-
-
-Terminal window
-
-
-```
-yarn add @fontsource/twinkle-star
-```
-
-
-
-
-
-Tip
-
-You’ll find the correct package name in the “Quick Installation” section of each font page on Fontsource’s website. It will start with `@fontsource/` or `@fontsource-variable/` followed by the name of the font.
-3. Import the font package in the component where you want to use the font. Usually, you will want to do this in a common layout component to make sure the font is available across your site.
-
-
-The import will automatically add the necessary `@font-face` rules needed to set up the font.
-
-
-
-
-src/layouts/BaseLayout.astro
-
-
-```
----import '@fontsource/twinkle-star';---
-```
-4. Use the font’s name as shown in the `body` example on its Fontsource page as the `font-family` value. This will work anywhere you can write CSS in your Astro project.
-
-
-
-
-
-
-
-```
-h1 {  font-family: "Twinkle Star", cursive;}
-```
-
-
-To optimize your website’s rendering times, you may want to preload fonts that are essential for the initial page display.
-See the [Fontsource guide to preloading fonts](https://fontsource.org/docs/getting-started/preload) for more information and usage.
-
-
-Register fonts in Tailwind
---------------------------
-
-[Section titled Register fonts in Tailwind](#register-fonts-in-tailwind)
-If you are using the [Tailwind integration](/en/guides/integrations-guide/tailwind/), you can use either of the previous methods on this page to install your font, with some modification. You can either add an [`@font-face` statement for a local font](#using-a-local-font-file) or use [Fontsource’s `import` strategy](#using-fontsource) to install your font.
-
-
-To register your font in Tailwind:
-
-
-1. Follow either of the guides above, but skip the final step of adding `font-family` to your CSS.
-2. Add the typeface name to `tailwind.config.mjs`.
-
-
-This example adds `Inter` to the sans\-serif font stack, with default fallback fonts from Tailwind CSS.
-
-
-
-
-tailwind.config.mjs
-
-
-```
-import defaultTheme from 'tailwindcss/defaultTheme'
-/** @type {import('tailwindcss').Config} */export default {  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],  theme: {    extend: {      fontFamily: {        sans: ['Inter', ...defaultTheme.fontFamily.sans],      },    },  },  plugins: [],}
-```
-
-Now, all sans\-serif text (the default with Tailwind) in your project will use your chosen font and the `font-sans` class will also apply the Inter font.
-
-
-See [Tailwind’s docs on adding custom font families](https://tailwindcss.com/docs/font-family#using-custom-values) for more information.
-
-
-More resources
---------------
-
-[Section titled More resources](#more-resources)
-* Learn how web fonts work in [MDN’s web fonts guide](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts).
-* Generate CSS for your font with [Font Squirrel’s Webfont Generator](https://www.fontsquirrel.com/tools/webfont-generator).
-
-
-Learn
+<br/>
