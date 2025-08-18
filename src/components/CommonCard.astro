@@ -15,14 +15,13 @@ const { post } = Astro.props;
 >
   <a href={`/posts/${post.id}/`}>
     <figure class="h-48 w-full object-cover"> <!-- 图片区固定高度，保持比例 -->
-      <OptimizedCover src={post.data.cover as string} alt={post.data.coverAlt as string} />
+      <OptimizedCover src={post.data.cover} alt={post.data.coverAlt} />
     </figure>
     <div class="card-body">
       <div class="flex items-center gap-1 text-xs">
         {
-          Array.isArray(post.data.tags) &&
-          post.data.tags.map(tag => <span class="badge badge-outline">{tag}</span>)
-        }
+          post.data.tags?.map(tag => <span class="badge badge-outline">{tag}</span>)
+        } 
       </div>
       <p class="text-xs"><FormattedDate date={post.data.pubDate} /></p>
       <h3 class="card-title">{post.data.title}</h3>

@@ -8,12 +8,11 @@ const posts = defineCollection({
     pubDate: z.date(),
     description: z.string(),
     lastModified: z.string().optional(),
-    cover: z.string(), // 这里从 image() 改为 z.string()
+    cover: z.string(),
     coverAlt: z.string(),
     category: z.array(z.string()),
     tags: z.array(z.string()),
     author: z.string(),
-    image: z.string(), 
   }),
 });
 
