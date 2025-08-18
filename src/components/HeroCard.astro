@@ -35,7 +35,7 @@ const truncatedDescription = truncateUTF8String(post.data.description, 150);
 >
   <a href={`/posts/${post.id}/`} class="block md:flex md:flex-1">
     <div class="md:w-2/3">
-      <OptimizedCover src={post.data.cover.src.src} alt={post.data.coverAlt} />
+      <OptimizedCover src={post.data.cover} alt={post.data.coverAlt} />
     </div>
     <div class="card-body">
       <div class="mt-8 flex items-center gap-2 text-xs">

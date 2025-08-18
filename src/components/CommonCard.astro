@@ -15,7 +15,7 @@ const { post } = Astro.props;
 >
   <a href={`/posts/${post.id}/`}>
     <figure class="h-64 w-full object-cover"> <!-- 图片区固定高度，保持比例 -->
-      <OptimizedCover src={post.data.cover.src.src} alt={post.data.coverAlt} />
+      <OptimizedCover src={post.data.cover} alt={post.data.coverAlt} />
     </figure>
     <div class="card-body">
       <div class="flex items-center gap-1 text-xs">

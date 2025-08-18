@@ -15,7 +15,7 @@ const posts = defineCollection({
     pubDate: z.date(),
     description: z.string(),
     lastModified: z.string().optional(),
-    cover: coverSchema, // 使用新的封面图 schema
+    const coverSchema: z.string();  // 只保留图片源路径字符串
     coverAlt: z.string(),
     category: z.array(z.string()),
     tags: z.array(z.string()),
