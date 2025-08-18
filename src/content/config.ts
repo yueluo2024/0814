@@ -1,4 +1,4 @@
-import { defineCollection, z, image } from "astro:content";
+import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
 
 const posts = defineCollection({
@@ -8,11 +8,12 @@ const posts = defineCollection({
     pubDate: z.date(),
     description: z.string(),
     lastModified: z.string().optional(),
-    cover: image(), // 这里从 z.string() 改为 image()
+    cover: z.string(), // 这里从 image() 改为 z.string()
     coverAlt: z.string(),
     category: z.array(z.string()),
     tags: z.array(z.string()),
     author: z.string(),
+    image: z.string(), 
   }),
 });
 
