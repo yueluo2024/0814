@@ -66,7 +66,7 @@ const { page } = Astro.props;
       - 布局：`gap-4` 控制卡片间距，`md:grid-cols-2` 让中等屏幕显示 2 列 
     */}
         <div class="mb-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
-          {page.data.slice(1, 7).map((post) => (
+          {page.data.slice(1, 5).map((post) => (
             <PostCard post={post} />
           ))}
         </div>
@@ -77,7 +77,7 @@ const { page } = Astro.props;
       - 布局：`lg:grid-cols-3` 让大屏显示 3 列，兼容不同设备 
     */}
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {page.data.slice(7).map((post) => (
+          {page.data.slice(5).map((post) => (
             <PostCard post={post} />
           ))}
         </div>

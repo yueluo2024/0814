@@ -14,7 +14,7 @@ const { post } = Astro.props;
   class="card shadow-xl rounded-xl overflow-hidden transition-transform duration-500 hover:-translate-y-1 hover:scale-105"
 >
   <a href={`/posts/${post.id}/`}>
-    <figure class="h-64 w-full object-cover"> <!-- 图片区固定高度，保持比例 -->
+    <figure class="h-48 w-full object-cover"> <!-- 图片区固定高度，保持比例 -->
       <OptimizedCover src={post.data.cover} alt={post.data.coverAlt} />
     </figure>
     <div class="card-body">

@@ -8,7 +8,7 @@ const posts = defineCollection({
     pubDate: z.date(),
     description: z.string(),
     lastModified: z.string().optional(),
-    cover: z.string(), // 改为字符串类型，存储图片路径
+    cover: z.string(),
     coverAlt: z.string(),
     category: z.array(z.string()),
     tags: z.array(z.string()),
@@ -17,4 +17,3 @@ const posts = defineCollection({
 });
 
 export const collections = { posts };
-    

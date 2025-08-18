@@ -17,6 +17,7 @@
     "@astrojs/sitemap": "^3.2.1",
     "@iconify-json/tabler": "^1.2.6",
     "@tailwindcss/vite": "^4.0.14",
+    "astro": "^5.5.2",
     "astro-pagefind": "^1.8.2",
     "dayjs": "^1.11.13",
     "pagefind": "^1.1.1",
@@ -28,23 +29,9 @@
     "@iconify/json": "^2.2.317",
     "@iconify/tailwind4": "^1.0.6",
     "@tailwindcss/typography": "^0.5.15",
-    "astro": "^5.13.2",
     "daisyui": "^5.0.4",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.8"
-  },
-  "description": "![ScreenShots](./screenshots.png)",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yueluo2024/0814.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yueluo2024/0814/issues"
-  },
-  "homepage": "https://github.com/yueluo2024/0814#readme"
+  }
 }
